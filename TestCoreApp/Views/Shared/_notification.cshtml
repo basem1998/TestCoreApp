@@ -1,0 +1,9 @@
+﻿@if (TempData["sucess"] != null)
+{
+    <h3 style="color:brown"> @TempData["sucess"];</h3>
+}
+
+<script type="text/javascript">
+    toastr.success('@TempData["sucess"]', 'sucsess');
+
+</script>
